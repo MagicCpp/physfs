@@ -2,12 +2,7 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{543E6DAB-3759-36D8-A8BC-DCF0114F3284}</UniqueIdentifier>
+      <UniqueIdentifier>{6056A836-8663-30F4-9652-32520E61F224}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\test\test_physfs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

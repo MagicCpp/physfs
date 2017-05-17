@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_physfs", "test_physfs.
 		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0} = {E4C7725C-2B7D-3CDC-AD8F-C700712489F0}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physfs++", "physfs++.vcxproj", "{6786E6E2-3DE2-3328-A7C9-71C6DA24AAD7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_physfs++", "test_physfs++.vcxproj", "{81F2D6F2-C0FD-348F-BE33-99A6EF87E00E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -29,6 +33,14 @@ Global
 		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Debug|Win32.Build.0 = Debug|Win32
 		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Release|Win32.ActiveCfg = Release|Win32
 		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Release|Win32.Build.0 = Release|Win32
+		{6786E6E2-3DE2-3328-A7C9-71C6DA24AAD7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6786E6E2-3DE2-3328-A7C9-71C6DA24AAD7}.Debug|Win32.Build.0 = Debug|Win32
+		{6786E6E2-3DE2-3328-A7C9-71C6DA24AAD7}.Release|Win32.ActiveCfg = Release|Win32
+		{6786E6E2-3DE2-3328-A7C9-71C6DA24AAD7}.Release|Win32.Build.0 = Release|Win32
+		{81F2D6F2-C0FD-348F-BE33-99A6EF87E00E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81F2D6F2-C0FD-348F-BE33-99A6EF87E00E}.Debug|Win32.Build.0 = Debug|Win32
+		{81F2D6F2-C0FD-348F-BE33-99A6EF87E00E}.Release|Win32.ActiveCfg = Release|Win32
+		{81F2D6F2-C0FD-348F-BE33-99A6EF87E00E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
