@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs_byteorder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs_unicode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\os2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\pocketpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\posix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\unix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\macosx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\dir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\grp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\hog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\lzma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\mvl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\qpak.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\wad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\7zCrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zBuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zDecode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zExtract.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zHeader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zIn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zMethodID.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Branch\BranchX86.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Branch\BranchX86_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Lzma\LzmaDecode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\gzio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{543E6DAB-3759-36D8-A8BC-DCF0114F3284}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

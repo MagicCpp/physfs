@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>physfs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\temp\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\temp\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..;$(SolutionDir)..\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;_REENTRANT;_THREAD_SAFE;HAVE_ASSERT_H=1;PHYSFS_SUPPORTS_ZIP=1;PHYSFS_SUPPORTS_7Z=1;PHYSFS_SUPPORTS_WAD=1;PHYSFS_SUPPORTS_HOG=1;PHYSFS_SUPPORTS_MVL=1;PHYSFS_SUPPORTS_QPAK=1;Z_PREFIX=1;CMAKE_INTDIR="Debug";physfs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS=1;_REENTRANT;_THREAD_SAFE;HAVE_ASSERT_H=1;PHYSFS_SUPPORTS_ZIP=1;PHYSFS_SUPPORTS_7Z=1;PHYSFS_SUPPORTS_WAD=1;PHYSFS_SUPPORTS_HOG=1;PHYSFS_SUPPORTS_MVL=1;PHYSFS_SUPPORTS_QPAK=1;Z_PREFIX=1;CMAKE_INTDIR=\"Debug\";physfs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SVNProjects\physfs-2.0.3\.;F:\SVNProjects\physfs-2.0.3\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SVNProjects\physfs-2.0.3\.;F:\SVNProjects\physfs-2.0.3\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SVNProjects/physfs-2.0.3/build/Debug/physfs.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SVNProjects/physfs-2.0.3/build/Debug/physfs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..;$(SolutionDir)..\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;_REENTRANT;_THREAD_SAFE;HAVE_ASSERT_H=1;PHYSFS_SUPPORTS_ZIP=1;PHYSFS_SUPPORTS_7Z=1;PHYSFS_SUPPORTS_WAD=1;PHYSFS_SUPPORTS_HOG=1;PHYSFS_SUPPORTS_MVL=1;PHYSFS_SUPPORTS_QPAK=1;Z_PREFIX=1;CMAKE_INTDIR="Release";physfs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS=1;_REENTRANT;_THREAD_SAFE;HAVE_ASSERT_H=1;PHYSFS_SUPPORTS_ZIP=1;PHYSFS_SUPPORTS_7Z=1;PHYSFS_SUPPORTS_WAD=1;PHYSFS_SUPPORTS_HOG=1;PHYSFS_SUPPORTS_MVL=1;PHYSFS_SUPPORTS_QPAK=1;Z_PREFIX=1;CMAKE_INTDIR=\"Release\";physfs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SVNProjects\physfs-2.0.3\.;F:\SVNProjects\physfs-2.0.3\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SVNProjects\physfs-2.0.3\.;F:\SVNProjects\physfs-2.0.3\zlib123;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SVNProjects/physfs-2.0.3/build/Release/physfs.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SVNProjects/physfs-2.0.3/build/Release/physfs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs_byteorder.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\physfs_unicode.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\os2.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\pocketpc.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\posix.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\unix.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\macosx.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\platform\windows.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\dir.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\grp.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\hog.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\lzma.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\mvl.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\qpak.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\wad.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\archivers\zip.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\7zCrc.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zBuffer.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zDecode.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zExtract.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zHeader.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zIn.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zItem.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Archive\7z\7zMethodID.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Branch\BranchX86.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Branch\BranchX86_2.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\lzma\C\Compress\Lzma\LzmaDecode.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\adler32.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\compress.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\crc32.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\deflate.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\gzio.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\infback.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inffast.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inflate.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\inftrees.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\trees.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\uncompr.c" />
+    <ClCompile Include="F:\SVNProjects\physfs-2.0.3\zlib123\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physfs", "physfs.vcxproj", "{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physfs-static", "physfs-static.vcxproj", "{01868EBC-7A9C-32D7-8CF4-F7B4434F4C12}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_physfs", "test_physfs.vcxproj", "{8D56952A-23CC-3E16-99AA-61C903CD5AC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0} = {E4C7725C-2B7D-3CDC-AD8F-C700712489F0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}.Debug|Win32.Build.0 = Debug|Win32
+		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}.Release|Win32.ActiveCfg = Release|Win32
+		{E4C7725C-2B7D-3CDC-AD8F-C700712489F0}.Release|Win32.Build.0 = Release|Win32
+		{01868EBC-7A9C-32D7-8CF4-F7B4434F4C12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{01868EBC-7A9C-32D7-8CF4-F7B4434F4C12}.Debug|Win32.Build.0 = Debug|Win32
+		{01868EBC-7A9C-32D7-8CF4-F7B4434F4C12}.Release|Win32.ActiveCfg = Release|Win32
+		{01868EBC-7A9C-32D7-8CF4-F7B4434F4C12}.Release|Win32.Build.0 = Release|Win32
+		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Debug|Win32.Build.0 = Debug|Win32
+		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Release|Win32.ActiveCfg = Release|Win32
+		{8D56952A-23CC-3E16-99AA-61C903CD5AC0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
